@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7nK-uo-8xZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Data Karyawan Table View Controller-->
+        <scene sceneID="YV9-yV-5vw">
+            <objects>
+                <tableViewController id="ugy-GR-axP" customClass="DataKaryawanTableViewController" customModule="QuizDataKaryawan" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="iP3-II-9nN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellData" rowHeight="78" id="c6J-dT-BJQ" customClass="DataTableViewCell" customModule="QuizDataKaryawan" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="78"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c6J-dT-BJQ" id="s69-gE-NtE">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="77.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Farras Abiyyu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6z-Rx-kWp">
+                                            <rect key="frame" x="8" y="8" width="176" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="24" id="DJi-Vz-A7o"/>
+                                                <constraint firstAttribute="width" constant="176" id="xW5-4y-klD"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Golongan 4A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOd-Fs-ole">
+                                            <rect key="frame" x="8" y="53" width="359" height="20.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20.5" id="COc-MU-cS9"/>
+                                                <constraint firstAttribute="width" constant="359" id="lUj-x6-BK5"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gaji 1milyar/bln" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZQ-dh-F2m">
+                                            <rect key="frame" x="268" y="8" width="97.5" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="4D7-RE-XMk"/>
+                                                <constraint firstAttribute="width" constant="97.5" id="VOH-N3-F3i"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Staff Admin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDA-LY-jYR">
+                                            <rect key="frame" x="8" y="31" width="89.5" height="20.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="89.5" id="cMJ-LH-D4Z"/>
+                                                <constraint firstAttribute="height" constant="20.5" id="vL3-gM-XWO"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="AOd-Fs-ole" secondAttribute="trailing" constant="8" id="12X-93-x4W"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="hZQ-dh-F2m" secondAttribute="trailing" constant="1.5" id="1Pu-Ib-vqc"/>
+                                        <constraint firstAttribute="bottom" secondItem="AOd-Fs-ole" secondAttribute="bottom" constant="4" id="66h-Yr-8mn"/>
+                                        <constraint firstItem="hZQ-dh-F2m" firstAttribute="leading" secondItem="v6z-Rx-kWp" secondAttribute="trailing" constant="84" id="8hw-43-QDX"/>
+                                        <constraint firstItem="AOd-Fs-ole" firstAttribute="top" secondItem="v6z-Rx-kWp" secondAttribute="bottom" constant="21" id="Dpx-0k-bBQ"/>
+                                        <constraint firstItem="hZQ-dh-F2m" firstAttribute="leading" secondItem="v6z-Rx-kWp" secondAttribute="trailing" constant="84" id="KNF-vF-9lR"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="kDA-LY-jYR" secondAttribute="trailing" constant="269.5" id="Qr8-cP-wXT"/>
+                                        <constraint firstItem="hZQ-dh-F2m" firstAttribute="top" secondItem="s69-gE-NtE" secondAttribute="topMargin" id="RsN-bw-sSK"/>
+                                        <constraint firstItem="v6z-Rx-kWp" firstAttribute="leading" secondItem="s69-gE-NtE" secondAttribute="leadingMargin" id="biH-ps-Qje"/>
+                                        <constraint firstItem="AOd-Fs-ole" firstAttribute="leading" secondItem="s69-gE-NtE" secondAttribute="leading" constant="8" id="bkc-td-jO0"/>
+                                        <constraint firstItem="AOd-Fs-ole" firstAttribute="top" secondItem="kDA-LY-jYR" secondAttribute="bottom" constant="1.5" id="gof-0s-i25"/>
+                                        <constraint firstItem="v6z-Rx-kWp" firstAttribute="top" secondItem="s69-gE-NtE" secondAttribute="topMargin" id="hbt-yy-k0x"/>
+                                        <constraint firstItem="kDA-LY-jYR" firstAttribute="top" secondItem="s69-gE-NtE" secondAttribute="topMargin" constant="23" id="mkl-XC-Y65"/>
+                                        <constraint firstItem="kDA-LY-jYR" firstAttribute="leading" secondItem="s69-gE-NtE" secondAttribute="leadingMargin" id="nOF-d6-w3k"/>
+                                        <constraint firstItem="AOd-Fs-ole" firstAttribute="top" secondItem="hZQ-dh-F2m" secondAttribute="bottom" constant="30" id="oCg-aA-kcg"/>
+                                        <constraint firstItem="AOd-Fs-ole" firstAttribute="top" secondItem="kDA-LY-jYR" secondAttribute="bottom" constant="1.5" id="wN6-Lh-0tk"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="labelgolongan" destination="AOd-Fs-ole" id="ZTj-bu-REg"/>
+                                    <outlet property="labelstaff" destination="kDA-LY-jYR" id="k3w-MQ-k21"/>
+                                    <outlet property="labeluser" destination="v6z-Rx-kWp" id="gp5-nj-K3u"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ugy-GR-axP" id="DC9-ia-zjv"/>
+                            <outlet property="delegate" destination="ugy-GR-axP" id="IiY-H7-6Vx"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="D3T-rx-K7d">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SK5-VR-fZi">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="modal" id="f55-vl-G3u"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="jEI-CV-KX9" kind="modal" identifier="passData" id="5qk-Lw-h98"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bhn-Fr-WD1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-400.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DetailViewController" customModule="QuizDataKaryawan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="36i-CN-I62">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.41490857393418279" green="0.77784087511719602" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="Input Data Karyawan" id="r9q-52-afR">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="LLE-5d-U4M">
+                                            <connections>
+                                                <segue destination="7nK-uo-8xZ" kind="modal" id="AvY-fO-kVl"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input Full Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JOT-Y1-CBS">
+                                <rect key="frame" x="64" y="94" width="246" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Golongan" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kg8-JR-7Tb">
+                                <rect key="frame" x="64" y="246" width="246" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gaji" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zab-ID-20c">
+                                <rect key="frame" x="64" y="170" width="246" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nama Staff" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PY7-29-04U">
+                                <rect key="frame" x="64" y="132" width="246" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID Karyawan" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2lR-2K-EYv">
+                                <rect key="frame" x="64" y="208" width="246" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ER-Y0-V3I">
+                                <rect key="frame" x="123" y="341" width="129" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.38884561851948851" blue="0.56438601994053439" alpha="0.66012949486301364" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="btnSaveTask:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zVl-Rx-fr0"/>
+                                    <segue destination="7nK-uo-8xZ" kind="modal" id="Z3a-B7-Tez"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cektugas" destination="Kg8-JR-7Tb" id="kY5-Wk-pSK"/>
+                        <outlet property="fullname" destination="JOT-Y1-CBS" id="LGq-oH-y0L"/>
+                        <outlet property="gaji" destination="zab-ID-20c" id="TpK-l6-HF3"/>
+                        <outlet property="idkaryawan" destination="2lR-2K-EYv" id="UPu-Rd-S9o"/>
+                        <outlet property="namastaff" destination="PY7-29-04U" id="lwb-L5-AZc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="392.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Isi View Controller-->
+        <scene sceneID="fNd-8c-CPc">
+            <objects>
+                <viewController id="jEI-CV-KX9" customClass="IsiViewController" customModule="QuizDataKaryawan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UhH-L7-FP1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caP-41-2hW">
+                                <rect key="frame" x="38" y="94" width="51" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLW-r6-1AU">
+                                <rect key="frame" x="61" y="143" width="253" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Staff" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x31-jJ-fMH">
+                                <rect key="frame" x="61" y="162" width="253" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Golongan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3C-gW-7ZQ">
+                                <rect key="frame" x="61" y="182" width="253" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gaji" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hB9-j3-IsH">
+                                <rect key="frame" x="61" y="203" width="253" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtO-7Y-t5Y">
+                                <rect key="frame" x="61" y="225" width="253" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S9I-m3-3ts">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.94386866125498126" green="1" blue="0.20607941375427141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="Data Karyawan" id="yEm-3a-CIx">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="diy-u4-xMq">
+                                            <connections>
+                                                <segue destination="7nK-uo-8xZ" kind="modal" id="YUp-pC-ahE"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kb2-cR-YFT"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelGaji" destination="hB9-j3-IsH" id="WaB-sj-j19"/>
+                        <outlet property="labelGolongan" destination="j3C-gW-7ZQ" id="dgw-Z4-aiS"/>
+                        <outlet property="labelID" destination="CtO-7Y-t5Y" id="K5N-Q1-ZZQ"/>
+                        <outlet property="labelStaff" destination="x31-jJ-fMH" id="V7c-Mt-YSK"/>
+                        <outlet property="labelUsername" destination="iLW-r6-1AU" id="Kyb-P0-ixA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0gH-ka-AXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1144.8" y="130.88455772113943"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="69u-89-hIa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7nK-uo-8xZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RjR-cq-t9D">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ugy-GR-axP" kind="relationship" relationship="rootViewController" id="YxB-E2-lZQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xh3-Rh-6Zd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1201" y="134"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="AvY-fO-kVl"/>
+    </inferredMetricsTieBreakers>
+</document>
